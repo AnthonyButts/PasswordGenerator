@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <p class="title">Klem's Password Generator</p>
+    <p class="version">v1.0.0</p>
+    <div class="generator">
+        <div class="options">
+            <p class="optionText">Uppercase Letters</p>
+            <input type="checkbox" onclick="checkboxToggle()" class="option" checked="true" autocomplete="false" id="useUppercaseLetters">
+            <br>
+            <p class="optionText">Numbers</p>
+            <input type="checkbox" onclick="checkboxToggle()" class="option" checked="true" id="useNumbers">
+            <br>
+            <p class="optionText">Special Characters</p>
+            <input type="checkbox" onclick="checkboxToggle()" class="option" checked="true" id="useSpecialCharacters">
+            <br>
+            <p class="optionText">Prevent Duplicates</p>
+            <input type="checkbox" onclick="checkboxToggle()" class="option" id="preventDuplicates">
+        </div>
+        <div class="buttons">
+            <button id="generate-button" onclick="generateButtonClicked()">Generate</button>
+            <label id="password-output">...</label>
+        </div>
+    </div>
+</body>
+
+</html>
